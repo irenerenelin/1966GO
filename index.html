@@ -1,237 +1,17 @@
 <!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - 1966go</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Noto+Sans+TC&amp;family=Roboto&amp;display=swap"rel="stylesheet'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
 <html>
-<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Noto+Sans+TC&amp;family=Roboto&amp;display=swap"rel="stylesheet'>
-<link rel="stylesheet" href="style.css">
-<style type="text/css">
-	* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-header {
-  background-color: #ffffff;
-  z-index: 100;
-  margin:0;
-  position: relative;
-  float: left;
-  width:100%;
-  text-align: left;
-  box-shadow: 0px 12px 8px -13px gray;
-}
-
-.navFixed {
-  z-index: 10;          
-  position: fixed;   
-  top: 0;
-  left: 0;
-  margin-top: 0;
-  min-width: 100%;
-  background-color:white;
-  transition: opacity .5s ease-out;   
-}
-
-h4{
-  font-family: Noto Sans TC;
-  color:#595757;
-  font-weight: bold;
-  font-size:20px;
-  margin:10px;
-}
-
-.hamburger {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  display: block;
-}
-
-.hamburger-line {
-  width: 30px;
-  height: 2px;
-  background-color: #727071;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  box-shadow: 0px 10px 0px #727071, 0px -10px 0px #727071;
-}
-
-.menu {
-  list-style-type: none;
-  background-color: #ffffff;
-  width: 100%;
-  position: absolute;
-  margin:0;
-  top: 0px;
-  left: 0;
-  transform: translateY(-150%);
-  transition: 0.6s;
-  z-index: 100;
-}
-
-.menu li a {
-  z-index: 99;
-  display: block;
-  padding-left:0;
-  padding:5px;
-  font-family: Noto Sans TC;
-  color:#595757;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 15px;
-  text-align: center;
-  border-bottom: 1px solid #727071;
-}
-#menu-switcher {
-  display: none;
-}
-
-#menu-switcher:checked ~ .menu {
-  transform: translateY(30%);
-}
-
-body{
-  margin:0;
-}
-
-.FirstPage{
-  padding-top:8%;
-  background-color: #F8E285;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-flow: row wrap;
-}
-.FPleft, .FPright{
-  width:100%;
-}
-
-h1{
-  font-family: Noto Sans TC;
-  color:black;
-  font-weight: bold;
-  font-size:40px;
-  margin:5px;
-  margin-left:10%;
-  text-shadow: -3px 3px 3px white, 3px 3px 3px white,3px -3px 3px white,-3px -3px 3px white; 
-}
-.FPsmall-word{
-  font-family: Noto Sans TC;
-  color:black;
-  font-weight: bold;
-  font-size:15px;
-  margin-top:0px;
-  margin-left:10%;
-  padding-top:15px;
-}
-
-.FPbutton{
-  border:0;
-  background-color:white;
-  color:black;
-  font-weight: bold;
-  font-size:20px;
-  padding:10px;
-  margin:20px;
-  margin-left:10%;
-  margin-bottom:10%;
-  border-radius:30px;
-  cursor:pointer;
-  box-shadow: 0px 15px 6px -12px gray;
-}
-
-.Problem{
-  background-color: #727071;
-  width: 100%;
-  position: relative;
-  margin: 0 auto;
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.Pleft, .Pright{
-  width:100%;
-}
-
-.Ptitleword{
-  width:100%;
-  font-family: Noto Sans TC;
-  color:white;
-  font-weight: bold;
-  font-size:18px;
-  padding:5%;
-  text-align:center;
-  margin: 0 auto;
-}
-
-
-
-@media (min-width: 850px) {
-  .FPleft {
-    width: 50%;
-    height:80vh;
-    margin-top:10vh;
-  }
-
-  .FPright {
-    width: 50%;
-    height:80vh;
-    margin-top:10vh;
-  }
-  h1{
-    font-size:52px;
-  }
-  
-  .Pleft {
-    width: 50%;
-    
-  }
-
-  .Pright {
-    width: 50%;
-  }
-}
-
-
-
-@media screen and (min-width: 850px) {
-  .hamburger {
-    display: none;
-  }
-  header {
-    display: flex;
-    justify-content: space-between;
-  }
-  .menu {
-    transform: translateY(20%);
-    height: auto;
-    width: auto;
-    display: flex;
-    position: relative;
-    background-color: transparent;
-  }
-  .menu li a {
-  display: block;
-  margin: 0px 15px 0px;
-  font-family: Noto Sans TC;
-  color:#595757;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 15px;
-  text-align: center;
-  }
-  
-}
-</style>
-
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <header class='navFixed'>
     <input type="checkbox" name="menu-switcher" id="menu-switcher" />
     <label for="menu-switcher" class="hamburger">
@@ -246,19 +26,35 @@ h1{
       <li><a href="https://forms.gle/mpRNwnLRE5Xiz8EAA" target="_blank" style="background-color:#595757;color:#F8E285;border-radius:30px;padding:5px">&nbsp;&nbsp;立即加入會員&nbsp;&nbsp;</a></li>
     </ul>
   </header>
-  
+  <body>
+    <div class="FirstPage" id="FirstPage">
+      <div class="FPleft">
+        <h1 style="margin-top:35px;">1966Go</h1>
+        <h1>安芯長照購物網</h1>
+        <p class="FPsmall-word">2021年7月1日 正式上線，會員熱情募集中！</p>
 
+        <input type="button" class="FPbutton" value="&nbsp;&nbsp;點我加入→&nbsp;&nbsp;" onclick="window.open('https://forms.gle/mpRNwnLRE5Xiz8EAA');"></input>
+      </div>
+      <div class="FPright">
+        <P Align=center><img src="https://upload.cc/i1/2021/05/04/aKUSXx.png" alt="0103" width="80%"> 
+      </div>  
+    </div>
+    
+    <div class="Problem" id="Problem">
+      
+       <div class="Ptitleword">面臨長照時，以下問題是否困擾著您？</div>
+      <div class="Pleft">
+        <div class="Pcardleft"></div>
+        
+        不知道</div>
+      <div class="Pright">不安心</div>
+      
+    </div>
+    
+  </body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
 
-  <script type="text/javascript">
-		  $(function() {
-		  $(window).scroll(function() {
-		    if ($(this).scrollTop() > 30)  {          /* 要滑動到選單的距離 */
-		       $('.dropdowns').addClass('navFixed');   /* 幫選單加上固定效果 */
-		    } else {
-		      $('.dropdowns').removeClass('navFixed'); /* 移除選單固定效果 */
-		    }
-		  });
-		});
-
-  </script>
+</body>
 </html>

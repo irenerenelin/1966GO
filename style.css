@@ -1,0 +1,224 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #ffffff;
+  z-index: 100;
+  margin:0;
+  position: relative;
+  float: left;
+  width:100%;
+  text-align: left;
+  box-shadow: 0px 12px 8px -13px gray;
+}
+
+.navFixed {
+  z-index: 10;          
+  position: fixed;   
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  min-width: 100%;
+  background-color:white;
+  transition: opacity .5s ease-out;   
+}
+
+h4{
+  font-family: Noto Sans TC;
+  color:#595757;
+  font-weight: bold;
+  font-size:20px;
+  margin:10px;
+}
+
+.hamburger {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: block;
+}
+
+.hamburger-line {
+  width: 30px;
+  height: 2px;
+  background-color: #727071;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0px 10px 0px #727071, 0px -10px 0px #727071;
+}
+
+.menu {
+  list-style-type: none;
+  background-color: #ffffff;
+  width: 100%;
+  position: absolute;
+  margin:0;
+  top: 0px;
+  left: 0;
+  transform: translateY(-150%);
+  transition: 0.6s;
+  z-index: 100;
+}
+
+.menu li a {
+  z-index: 99;
+  display: block;
+  padding-left:0;
+  padding:5px;
+  font-family: Noto Sans TC;
+  color:#595757;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align: center;
+  border-bottom: 1px solid #727071;
+}
+#menu-switcher {
+  display: none;
+}
+
+#menu-switcher:checked ~ .menu {
+  transform: translateY(30%);
+}
+
+body{
+  margin:0;
+}
+
+.FirstPage{
+  padding-top:8%;
+  background-color: #F8E285;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+.FPleft, .FPright{
+  width:100%;
+}
+
+h1{
+  font-family: Noto Sans TC;
+  color:black;
+  font-weight: bold;
+  font-size:40px;
+  margin:5px;
+  margin-left:10%;
+  text-shadow: -3px 3px 3px white, 3px 3px 3px white,3px -3px 3px white,-3px -3px 3px white; 
+}
+.FPsmall-word{
+  font-family: Noto Sans TC;
+  color:black;
+  font-weight: bold;
+  font-size:15px;
+  margin-top:0px;
+  margin-left:10%;
+  padding-top:15px;
+}
+
+.FPbutton{
+  border:0;
+  background-color:white;
+  color:black;
+  font-weight: bold;
+  font-size:20px;
+  padding:10px;
+  margin:20px;
+  margin-left:10%;
+  margin-bottom:10%;
+  border-radius:30px;
+  cursor:pointer;
+  box-shadow: 0px 15px 6px -12px gray;
+}
+
+.Problem{
+  background-color: #727071;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.Pleft, .Pright{
+  width:100%;
+}
+
+.Ptitleword{
+  width:100%;
+  font-family: Noto Sans TC;
+  color:white;
+  font-weight: bold;
+  font-size:18px;
+  padding:5%;
+  text-align:center;
+  margin: 0 auto;
+}
+
+
+
+@media (min-width: 850px) {
+  .FPleft {
+    width: 50%;
+    height:80vh;
+    margin-top:15vh;
+  }
+
+  .FPright {
+    width: 50%;
+    height:80vh;
+    margin-top:10vh;
+  }
+  h1{
+    font-size:52px;
+  }
+  
+  .Pleft {
+    width: 50%;
+    
+  }
+
+  .Pright {
+    width: 50%;
+  }
+}
+
+
+
+@media screen and (min-width: 850px) {
+  .hamburger {
+    display: none;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu {
+    transform: translateY(20%);
+    height: auto;
+    width: auto;
+    display: flex;
+    position: relative;
+    background-color: transparent;
+  }
+  .menu li a {
+  display: block;
+  margin: 0px 15px 0px;
+  font-family: Noto Sans TC;
+  color:#595757;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align: center;
+  }
+  
+}
