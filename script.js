@@ -7,3 +7,23 @@ $(function() {
     }
   });
 });
+
+var winW, 
+    initVP, 
+    newVP = "width=980"; 
+
+$(document).on({ 
+    ready: function(){ 
+     winW = $(window).width(); 
+    } 
+}); 
+
+$(window).on({ 
+    load: function(){ 
+     if (winW < 725) { setViewport(newVP); } 
+    } 
+}); 
+
+function setViewport(content) { 
+    $('meta[name=viewport]').attr('content',content); 
+} 
