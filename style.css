@@ -623,12 +623,10 @@ footer{
     }
   .FPleft {
     width: 50%;
-    height:80%;
     margin-top:8vh;
   }
   .FPright {
     width: 50%;
-    height:80%;
     margin-top:10vh;
   }
   h1{
@@ -648,7 +646,7 @@ footer{
     font-size:3vw;
     }
   .Pcard-title{
-    font-size:2.8vw;
+    font-size:4vw;
   }
   .Pcard-word{
     font-size:1.5vw;
@@ -661,7 +659,7 @@ footer{
     font-size:3vw;
     }
   .Hcard-title{
-      font-size:3.6vw;
+      font-size:3.4vw;
     }
   .Hcard-word{
       font-size:1.3vw;
