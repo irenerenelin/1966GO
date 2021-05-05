@@ -6,6 +6,7 @@
 html{
   width:100%;
   overflow-x:hidden;
+  display:block;
 }
 P{
   margin:0;
