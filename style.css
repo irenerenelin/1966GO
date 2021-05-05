@@ -623,13 +623,11 @@ footer{
     }
   .FPleft {
     width: 50%;
-    margin-top:5vh;
-    background-color: red;
+    margin-top:6vh;
   }
   .FPright {
     width: 50%;
-    margin-top:7vh;
-    background-color: blue;
+    margin-top:8vh;
   }
   h1{
     font-size:5vw;
