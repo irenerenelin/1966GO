@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 html{
-  width:100%;
+  width:auto;
   overflow-x:hidden;
   display:block;
 }
