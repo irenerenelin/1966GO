@@ -618,8 +618,9 @@ footer{
 
 @media (min-width: 650px) {
   .FirstPage{
-    padding-top:10%;
+    padding-top:5%;
     padding-bottom:10%;
+    background-color: orange;
     }
   .FPleft {
     width: 50%;
