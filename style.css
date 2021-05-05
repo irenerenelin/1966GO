@@ -14,7 +14,6 @@ header {
   text-align: left;
   box-shadow: 0px 12px 8px -13px gray;
 }
-
 .navFixed {
   z-index: 10;          
   position: fixed;   
@@ -25,7 +24,6 @@ header {
   background-color:white;
   transition: opacity .5s ease-out;   
 }
-
 h4{
   font-family: Noto Sans TC;
   color:#595757;
@@ -33,7 +31,6 @@ h4{
   font-size:20px;
   margin:10px;
 }
-
 .hamburger {
   width: 30px;
   height: 30px;
@@ -42,7 +39,6 @@ h4{
   right: 15px;
   display: block;
 }
-
 .hamburger-line {
   width: 30px;
   height: 2px;
@@ -55,7 +51,6 @@ h4{
   bottom: 0;
   box-shadow: 0px 10px 0px #727071, 0px -10px 0px #727071;
 }
-
 .menu {
   list-style-type: none;
   background-color: #ffffff;
@@ -68,7 +63,6 @@ h4{
   transition: 0.6s;
   z-index: 100;
 }
-
 .menu li a {
   z-index: 99;
   display: block;
@@ -85,7 +79,6 @@ h4{
 #menu-switcher {
   display: none;
 }
-
 #menu-switcher:checked ~ .menu {
   transform: translateY(30%);
 }
@@ -94,8 +87,10 @@ body{
   margin:0;
 }
 
+
 .FirstPage{
-  padding-top:8%;
+  padding-top:18%;
+  padding-bottom:5%;
   background-color: #F8E285;
   width: 100%;
   margin: 0 auto;
@@ -105,13 +100,12 @@ body{
 .FPleft, .FPright{
   width:100%;
 }
-
 h1{
   font-family: Noto Sans TC;
   color:black;
   font-weight: bold;
-  font-size:40px;
-  margin:5px;
+  font-size:9vw;
+  margin:1%;
   margin-left:10%;
   text-shadow: -3px 3px 3px white, 3px 3px 3px white,3px -3px 3px white,-3px -3px 3px white; 
 }
@@ -119,26 +113,26 @@ h1{
   font-family: Noto Sans TC;
   color:black;
   font-weight: bold;
-  font-size:15px;
+  font-size:4vw;
   margin-top:0px;
   margin-left:10%;
   padding-top:15px;
 }
-
 .FPbutton{
   border:0;
   background-color:white;
   color:black;
   font-weight: bold;
-  font-size:20px;
-  padding:10px;
-  margin:20px;
+  font-size:4.2vw;
+  padding:2%;
+  margin:2%;
   margin-left:10%;
   margin-bottom:10%;
-  border-radius:30px;
+  border-radius:50px;
   cursor:pointer;
   box-shadow: 0px 15px 6px -12px gray;
 }
+
 
 .Problem{
   background-color: #727071;
@@ -148,48 +142,646 @@ h1{
   display: flex;
   flex-flow: row wrap;
 }
-
 .Pleft, .Pright{
   width:100%;
 }
-
 .Ptitleword{
   width:100%;
   font-family: Noto Sans TC;
   color:white;
   font-weight: bold;
-  font-size:18px;
-  padding:5%;
+  font-size:4.2vw;
+  padding-top:6%;
   text-align:center;
+  margin: 0 auto;
+  margin-bottom:6%;
+}
+.Pcard{
+  width:35%;
+  font-family: Noto Sans TC;
+  color:#727071;
+  background-color:white;
+  padding:2%;
+  float:left;
+  margin-left:10%;
+  margin-bottom:12%;
+  border-radius:5px;
+  box-shadow: 12px 15px 6px -12px #595757;
+}
+.Pcard-title{
+  width:100%;
+  font-family: Noto Sans TC;
+  color:#595757;
+  background-color:white;
+  font-weight: bold;
+  font-size:7vw;
+  text-align:center;
+  padding:5%;
+  margin: 0 auto;
+}
+.Pcard-word{
+  width:100%;
+  font-family: Noto Sans TC;
+  color:#595757;
+  background-color:white;
+  font-weight: bold;
+  font-size:3vw;
+  padding:5%;
+  padding-bottom:10%;
   margin: 0 auto;
 }
 
 
-
-@media (min-width: 850px) {
-  .FPleft {
-    width: 50%;
-    height:80vh;
-    margin-top:15vh;
+.Help{
+  background-color: white;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+.Hleft, .Hright{
+  width:100%;
+}
+.Htitleword{
+    width:100%;
+    font-family: Noto Sans TC;
+    color:#595757;
+    font-weight: bold;
+    font-size:4.2vw;
+    padding-top:6%;
+    text-align:center;
+    margin: 0 auto;
+    margin-bottom:6%;
+  }
+.Hcard{
+    width:38%;
+    font-family: Noto Sans TC;
+    background-color:#727071;
+    padding:2%;
+    float:left;
+    margin-left:8%;
+    margin-bottom:12%;
+    border-radius:5px;
+    box-shadow: 12px 12px 8px -12px gray;
+  }
+.Hcard-title{
+    width:100%;
+    font-family: Noto Sans TC;
+    color:#F8E285;
+    font-weight: bold;
+    font-size:6.6vw;
+    text-align:center;
+    padding:5%;
+    margin: 0 auto;
+  }
+.Hcard-word{
+    width:100%;
+    font-family: Noto Sans TC;
+    color:white;
+    font-weight: bold;
+    font-size:2.8vw;
+    padding:5%;
+    padding-bottom:10%;
+    margin: 0 auto;
   }
 
+
+.Join{
+  background-color: #F8E285;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+.Jleft, .Jright{
+  width:100%;
+}
+.Jtitleword{
+    width:100%;
+    font-family: Noto Sans TC;
+    color:#595757;
+    font-weight: bold;
+    font-size:4.2vw;
+    padding-top:6%;
+    text-align:center;
+    margin: 0 auto;
+    margin-bottom:4%;
+  }
+h2{
+    width:100%;
+    font-family: Noto Sans TC;
+    color:black;
+    font-weight: bold;
+    font-size:6vw;
+    padding: 6%;
+    padding-top:1%;
+    margin-left:6%;
+    margin-bottom:4%;
+  }
+
+
+.Discount{
+  background-color: white;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+.Dtitleword{
+  width:100%;
+  font-family: Noto Sans TC;
+  color:#595757;
+  font-weight: bold;
+  font-size:4.2vw;
+  padding-top:6%;
+  text-align:center;
+  margin: 0 auto;
+  margin-bottom:6%;
+}
+.Dbigword{
+  width:100%;
+  font-family: Noto Sans TC;
+  color:black;
+  font-weight: bold;
+  font-size:4.5vw;
+  padding-top:2%;
+  margin-left:5%;
+}
+.Dsmallword{
+  width:100%;
+  font-family: Noto Sans TC;
+  color:#E0786F;
+  font-weight: bold;
+  font-size:3vw;
+  margin-top:1%;
+  margin-left:10%;
+  margin-bottom:6%;
+}
+.Dleft-1, .Dright-1, .Dleft-2, .Dright-2, .Dleft-3, .Dmiddle-3, .Dright-3{
+  width:100%;
+}
+.Dcard-1{
+    width:80%;
+    font-family: Noto Sans TC;
+    background-color:#727071;
+    float:left;
+    margin-left:8%;
+    margin-bottom:8%;
+    border-radius:10px;
+    box-shadow: 12px 12px 8px -12px gray;
+}
+.Dcard-1-title{
+  width:100%;
+  font-family: Noto Sans TC;
+  color:#595757;
+  background-color:#F8E285;
+  font-weight: bold;
+  font-size:5vw;
+  text-align:center;
+  border-radius:10px 10px 0px 0px;
+  padding:2%; 
+}
+.Dcard-1-word{
+  width:100%;
+  font-family: Noto Sans TC;
+  color:white;
+  font-size:3vw;
+  padding:5%;
+  padding-bottom:5%;
+  margin: 0 auto;
+}
+.Dcard-2{
+    width:80%;
+    font-family: Noto Sans TC;
+    background-color:#727071;
+    float:left;
+    margin-left:8%;
+    margin-bottom:8%;
+    border-radius:10px;
+    box-shadow: 12px 12px 8px -12px gray;
+}
+.Dcard-2-title{
+  width:100%;
+  font-family: Noto Sans TC;
+  color:#595757;
+  background-color:#F8E285;
+  font-weight: bold;
+  font-size:5vw;
+  text-align:center;
+  border-radius:10px 10px 0px 0px;
+  padding:2%; 
+}
+.Dcard-2-word{
+  width:100%;
+  font-family: Noto Sans TC;
+  color:white;
+  font-size:3vw;
+  padding:5%;
+  padding-bottom:5%;
+  margin: 0 auto;
+}
+.Dshop{
+    width:80%;
+    font-family: Noto Sans TC;
+    background-color:white;
+    float:left;
+    margin-left:8%;
+    margin-bottom:8%;
+    border-radius:10px;
+    border: 2px #3F94D1 solid ;
+    box-shadow: 12px 12px 8px -12px gray;
+}
+.Dshop-title{
+  width:100%;
+  font-family: Noto Sans TC;
+  color:#3F94D1;
+  font-weight: bold;
+  font-size:4vw;
+  text-align:center;
+  border-radius:10px 10px 0px 0px;
+  padding:2%; 
+}
+.Shopbutton{
+  border:0;
+  background-color:#3F94D1;
+  color:white;
+  font-weight: bold;
+  font-size:3vw;
+  padding:2%;
+  margin:2%;
+  margin-left:30%;
+  margin-bottom:5%;
+  border-radius:50px;
+  cursor:pointer;
+}
+.Dcard-3{
+    width:80%;
+    font-family: Noto Sans TC;
+    background-color:#727071;
+    float:left;
+    margin-left:8%;
+    margin-bottom:8%;
+    border-radius:10px;
+    box-shadow: 12px 12px 8px -12px gray;
+}
+.Dcard-3-title{
+  width:100%;
+  font-family: Noto Sans TC;
+  color:#595757;
+  background-color:#F8E285;
+  font-weight: bold;
+  font-size:5vw;
+  text-align:center;
+  border-radius:10px 10px 0px 0px;
+  padding:2%; 
+}
+.Dcard-3-word{
+  width:100%;
+  font-family: Noto Sans TC;
+  color:white;
+  font-size:3vw;
+  padding:5%;
+  padding-bottom:5%;
+  margin: 0 auto;
+}
+.Dbar-3{
+  display: none;
+  font-family: Noto Sans TC;
+}
+.Dbar-card-3{
+    width:100%;
+    font-family: Noto Sans TC;
+    float:left;
+    margin-left:50%;
+    margin-top:0%;
+}
+.Dbar-3-word{
+  width:100%;
+  font-family: Noto Sans TC;
+  color:#595757;
+  font-size:1.4vw;
+  padding:5%;
+  padding-top:20%;
+  padding-bottom:5%;
+  margin: 0 auto;
+}
+
+.Item{
+  background-color:#F8E285;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+.Iup{
+  width:100%;
+  margin-top:5%;
+}
+.Iupbutton{
+  border:0;
+  background-color:white;
+  color:black;
+  font-weight: bold;
+  font-size:3vw;
+  padding:1.5%;
+  margin-bottom:5%;
+  border-radius:50px;
+  cursor:pointer;
+  box-shadow: 0px 15px 6px -12px gray;
+}
+.Ileft, .Iright{
+  width:100%;
+}
+.Ititleword{
+    width:80%;
+    font-family: Noto Sans TC;
+    color:black;
+    font-weight: bold;
+    font-size:4vw;
+  }
+.Icard{
+    width:38%;
+    font-family: Noto Sans TC;
+    background-color:#727071;
+    padding:2%;
+    float:left;
+    margin-left:8%;
+    margin-bottom:12%;
+    border-radius:5px;
+    box-shadow: 12px 12px 8px -12px gray;
+  }
+.Icard-title{
+    width:100%;
+    font-family: Noto Sans TC;
+    color:#F8E285;
+    font-weight: bold;
+    font-size:5.8vw;
+    text-align:center;
+    padding:5%;
+    margin: 0 auto;
+  }
+.Icard-word{
+    width:100%;
+    font-family: Noto Sans TC;
+    color:white;
+    font-size:2.8vw;
+    padding:1%;
+    padding-top:4%;
+    padding-bottom:10%;
+    margin: 0 auto;
+  }
+.Ibutton{
+  border:0;
+  background-color:white;
+  color:#595757;
+  font-weight: bold;
+  font-size:3vw;
+  padding:3%;
+  margin:2%;
+  margin-left:20%;
+  margin-bottom:10%;
+  border-radius:50px;
+}
+.Contact{
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+.c1{
+  width:50%;
+  padding-left:10%;
+  padding-top:2%;
+}
+.c1-p{
+     width:100%;
+    font-family: Noto Sans TC;
+    color:#595757;
+    font-size:1.2vw;
+    padding-bottom:5%;
+    margin: 0 auto;
+}
+.c2{
+  width:50%;
+}
+
+h5{
+  font-family: Noto Sans TC;
+  color:#0054A7;
+  font-size:2vw;
+  margin:0;
+  padding-top:4%;
+}
+
+.c2-p{
+    width:100%;
+    font-family: Noto Sans TC;
+    color:#595757;
+    font-size:1.6vw;
+    padding-top:1%;
+    padding-bottom:5%;
+    margin: 0 auto;
+}
+
+footer{
+  font-family: Noto Sans TC;
+  background-color:#595757;
+  color:white;
+  font-weight: bold;
+  font-size:2vw;
+  padding:2%;
+  text-align:center;
+}
+
+@media (min-width: 650px) {
+  .FirstPage{
+    padding-top:8%;
+    padding-bottom:10%;
+    }
+  .FPleft {
+    width: 50%;
+    height:80%;
+    margin-top:15vh;
+  }
   .FPright {
     width: 50%;
-    height:80vh;
+    height:80%;
     margin-top:10vh;
   }
   h1{
-    font-size:52px;
+    font-size:5vw;
+  }
+  .FPsmall-word{
+    font-size:2vw;
+  }
+  .FPbutton{
+  font-size:2.5vw;
+}
+  
+  .Pleft, .Pright {
+    width: 50%;  
+  }
+  .Ptitleword{
+    font-size:3vw;
+    }
+  .Pcard-title{
+    font-size:4vw;
+  }
+  .Pcard-word{
+    font-size:1.5vw;
   }
   
-  .Pleft {
-    width: 50%;
-    
+  .Hleft,.Hright {
+    width: 50%; 
   }
-
-  .Pright {
-    width: 50%;
+  .Htitleword{
+    font-size:3vw;
+    }
+  .Hcard-title{
+      font-size:3.6vw;
+    }
+  .Hcard-word{
+      font-size:1.4vw;
+    }
+  
+  .Jleft{
+  width:60%;
+}
+  .Jright{
+    width:40%;
+    margin-top:10%;
+    padding-left:5%;
   }
+  .Jtitleword{
+    font-size:3vw;
+  }
+   h2{
+    font-size:5vw;
+    padding: 6%;
+    padding-top:1%;
+    margin-left:6%;
+    margin-bottom:1%;
+  }
+  
+  
+  .Dtitleword{
+    font-size:3vw;
+  }
+  .Dbigword{
+    font-size:4vw;
+    padding-top:1%;
+    margin-left:5%;
+  }
+  .Dsmallword{
+  font-size:2vw;
+  margin-bottom:5%;
+}
+  .Dleft-1{
+    width:45%;
+  }
+  .Dright-1{
+    width:55%;
+  }
+  .Dcard-1{
+      width:88%;
+      margin-bottom:8%;
+  }
+  .Dcard-1-title{
+    font-size:3vw;
+  }
+  .Dcard-1-word{
+    font-size:1.8vw;
+  }
+  
+  .Dleft-2{
+    width:50%;
+  }
+  .Dright-2{
+    width:50%;
+  }
+  .Dcard-2{
+      width:88%;
+      margin-bottom:8%;
+  }
+  .Dcard-2-title{
+    font-size:3vw;
+  }
+  .Dcard-2-word{
+    font-size:1.8vw;
+  }
+  .Dshop-title{
+    font-size:2.5vw;
+  }
+  .Shopbutton{
+    font-size:2.2vw;
+    margin-left:25%;
+  }
+  
+  .Dbar-3{
+    width:5%;
+    display:inline;
+  }
+  .Dleft-3{
+    width:28%;
+  }
+  .Dmiddle-3{
+    width:32%;
+  }
+  .Dright-3{
+    width:30%;
+  }
+  .Dcard-3{
+      width:96%;
+      margin-bottom:8%;
+  }
+  .Dcard-3-title{
+    font-size:3vw;
+  }
+  .Dcard-3-word{
+    font-size:1.7vw;
+  }
+  .Dbar-card-3{
+    width:100%;
+    margin-left:50%;
+    margin-top:100%;
+}
+.Dbar-3-word{
+  width:100%;
+  font-size:1.4vw;
+  padding:5%;
+  padding-top:20%;
+  padding-bottom:5%;
+  margin: 0 auto;
+}
+  .Iup{
+  width:80%;
+  margin-top:5%;
+  margin-left:5%;
+}
+  
+  .Ileft,.Iright {
+    width: 50%; 
+  }
+  .Ititleword{
+    font-size:3vw;
+    }
+  .Icard-title{
+      font-size:2.8vw;
+    }
+  .Icard-word{
+      font-size:1.6vw;
+    }
+  .Ibutton{
+  font-size:1.5vw;
+}
+  .Iupbutton{
+  font-size:2vw;
+}
 }
 
 
