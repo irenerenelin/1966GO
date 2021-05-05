@@ -1,7 +1,17 @@
-* {
+ * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+html{
+  width:100%;
+  overflow-x:hidden;
+}
+P{
+  margin:0;
+}
+img{
+  margin:0;
 }
 
 header {
@@ -28,7 +38,7 @@ h4{
   font-family: Noto Sans TC;
   color:#595757;
   font-weight: bold;
-  font-size:20px;
+  font-size:18px;
   margin:10px;
 }
 .hamburger {
@@ -40,7 +50,7 @@ h4{
   display: block;
 }
 .hamburger-line {
-  width: 30px;
+  width: 26px;
   height: 2px;
   background-color: #727071;
   margin: auto;
@@ -49,7 +59,7 @@ h4{
   left: 0;
   right: 0;
   bottom: 0;
-  box-shadow: 0px 10px 0px #727071, 0px -10px 0px #727071;
+  box-shadow: 0px 8px 0px #727071, 0px -8px 0px #727071;
 }
 .menu {
   list-style-type: none;
@@ -74,7 +84,6 @@ h4{
   text-transform: uppercase;
   font-size: 15px;
   text-align: center;
-  border-bottom: 1px solid #727071;
 }
 #menu-switcher {
   display: none;
@@ -85,8 +94,14 @@ h4{
 
 body{
   margin:0;
+  padding:0;
+  max-width:100%;
+  overflow-x:auto;
 }
 
+img{
+  display:block;
+}
 
 .FirstPage{
   padding-top:18%;
@@ -116,7 +131,8 @@ h1{
   font-size:4vw;
   margin-top:0px;
   margin-left:10%;
-  padding-top:15px;
+  padding-top:4%;
+  padding-bottom:6%;
 }
 .FPbutton{
   border:0;
@@ -185,7 +201,7 @@ h1{
   color:#595757;
   background-color:white;
   font-weight: bold;
-  font-size:3vw;
+  font-size:2.8vw;
   padding:5%;
   padding-bottom:10%;
   margin: 0 auto;
@@ -240,7 +256,7 @@ h1{
     font-family: Noto Sans TC;
     color:white;
     font-weight: bold;
-    font-size:2.8vw;
+    font-size:2.6vw;
     padding:5%;
     padding-bottom:10%;
     margin: 0 auto;
@@ -251,7 +267,7 @@ h1{
   background-color: #F8E285;
   width: 100%;
   position: relative;
-  margin: 0 auto;
+  margin: 0;
   display: flex;
   flex-flow: row wrap;
 }
@@ -270,7 +286,7 @@ h1{
     margin-bottom:4%;
   }
 h2{
-    width:100%;
+    width:90%;
     font-family: Noto Sans TC;
     color:black;
     font-weight: bold;
@@ -293,10 +309,10 @@ h2{
 .Dtitleword{
   width:100%;
   font-family: Noto Sans TC;
-  color:#595757;
+  color:#E0786F;
   font-weight: bold;
   font-size:4.2vw;
-  padding-top:6%;
+  padding-top:8%;
   text-align:center;
   margin: 0 auto;
   margin-bottom:6%;
@@ -348,7 +364,7 @@ h2{
   width:100%;
   font-family: Noto Sans TC;
   color:white;
-  font-size:3vw;
+  font-size:2.8vw;
   padding:5%;
   padding-bottom:5%;
   margin: 0 auto;
@@ -378,7 +394,7 @@ h2{
   width:100%;
   font-family: Noto Sans TC;
   color:white;
-  font-size:3vw;
+  font-size:2.8vw;
   padding:5%;
   padding-bottom:5%;
   margin: 0 auto;
@@ -409,10 +425,10 @@ h2{
   background-color:#3F94D1;
   color:white;
   font-weight: bold;
-  font-size:3vw;
+  font-size:2.8vw;
   padding:2%;
   margin:2%;
-  margin-left:30%;
+  margin-left:32%;
   margin-bottom:5%;
   border-radius:50px;
   cursor:pointer;
@@ -519,7 +535,7 @@ h2{
     font-family: Noto Sans TC;
     color:#F8E285;
     font-weight: bold;
-    font-size:5.8vw;
+    font-size:5.6vw;
     text-align:center;
     padding:5%;
     margin: 0 auto;
@@ -528,7 +544,7 @@ h2{
     width:100%;
     font-family: Noto Sans TC;
     color:white;
-    font-size:2.8vw;
+    font-size:2.6vw;
     padding:1%;
     padding-top:4%;
     padding-bottom:10%;
@@ -563,6 +579,7 @@ h2{
     font-family: Noto Sans TC;
     color:#595757;
     font-size:1.2vw;
+    padding-top:1%;
     padding-bottom:5%;
     margin: 0 auto;
 }
@@ -575,7 +592,7 @@ h5{
   color:#0054A7;
   font-size:2vw;
   margin:0;
-  padding-top:4%;
+  padding-top:6%;
 }
 
 .c2-p{
@@ -646,7 +663,7 @@ footer{
       font-size:3.6vw;
     }
   .Hcard-word{
-      font-size:1.4vw;
+      font-size:1.3vw;
     }
   
   .Jleft{
