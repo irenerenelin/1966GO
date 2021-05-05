@@ -623,11 +623,11 @@ footer{
     }
   .FPleft {
     width: 50%;
-    margin-top:6vh;
+    margin-top:5vh;
   }
   .FPright {
     width: 50%;
-    margin-top:8vh;
+    margin-top:7vh;
   }
   h1{
     font-size:5vw;
@@ -790,7 +790,7 @@ footer{
       font-size:2.8vw;
     }
   .Icard-word{
-      font-size:1.6vw;
+      font-size:1.4vw;
     }
   .Ibutton{
   font-size:1.5vw;
